@@ -1,0 +1,24 @@
+@mixin media($device: $desktop) {
+  @media (min-width: #{$device}) {
+    @content;
+  }
+}
+@mixin font-face(
+  $font-name,
+  $src-url,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-name;
+    src: url($src-url) format("woff");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+@mixin font($family, $size, $weight: normal, $style: normal) {
+  font-family: #{$family};
+  font-size: #{$size};
+  font-weight: #{$weight};
+  font-style: #{$style};
+}

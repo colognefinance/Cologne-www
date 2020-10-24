@@ -1,0 +1,65 @@
+header.faq {
+  margin-bottom: 80px;
+  .logo {
+    padding: 40px 0;
+  }
+
+  @include media {
+    margin-bottom: 160px;
+    .logo {
+      padding: 40px 0 70px;
+    }
+  }
+}
+.faq-list {
+  margin-bottom: 80px;
+  .card {
+    background: transparent;
+    border: unset;
+    border-radius: unset;
+    border-bottom: 1px solid $bd-faq;
+  }
+  .card-header {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border: unset;
+    .question {
+      @include font($font-second, $font-size-24, 600, normal);
+    }
+  }
+  .collapse-icon {
+    @extend .contain-bg;
+    background-image: url(../images/icon/Vector-.svg);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: unset;
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s;
+    &.collapsed {
+      background-image: url(../images/icon/Vector+.svg);
+    }
+  }
+  .card-body {
+    @include font($font-pri, $font-size-16, italic, normal);
+    padding: unset;
+    padding-bottom: 30px;
+    color: $txt-second;
+  }
+  @include media {
+    .card-header .question {
+      font-size: $font-size-32;
+    }
+    .card-body {
+      font-size: $font-size-24;
+    }
+    .collapse-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

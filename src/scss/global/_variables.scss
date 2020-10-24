@@ -1,0 +1,44 @@
+// color
+$color-pri: #efede3;
+$color-dark: #2a2a2d;
+$color-gray: #53565a;
+$color-white: #fff;
+$color-black: #000;
+
+$bg-pri: $color-pri;
+$txt-pri: $color-dark;
+$txt-second: $color-gray;
+$txt-title: $color-dark;
+$bg-btn: $color-dark;
+$txt-btn: $color-white;
+$bd-faq: $color-gray;
+// font-size
+$font-size-116: 7.25rem;
+$font-size-100: 6.25rem;
+$font-size-80: 4.5rem;
+$font-size-60: 3.75rem;
+$font-size-50: 3.125rem;
+$font-size-48: 3rem;
+$font-size-36: 2.25rem;
+$font-size-34: 2.125rem;
+$font-size-32: 2rem;
+$font-size-30: 1.875rem;
+$font-size-28: 1.75rem;
+$font-size-26: 1.625rem;
+$font-size-24: 1.5rem;
+$font-size-16: 1rem;
+
+$main-title: $font-size-116;
+
+// font-famlily
+$font-copper: "copperplate";
+$font-copper-light: "opticopperplate light";
+$font-optima: "Optima";
+
+$font-pri: $font-optima;
+$font-second: $font-copper;
+// breakpoint
+$xlarge: 1600px;
+$desktop: 1200px;
+$tablet: 700px;
+$tablet-pro: 1000px;

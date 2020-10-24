@@ -1,0 +1,65 @@
+body,
+html {
+  font-size: 16px;
+  font-family: $font-pri;
+  background: $bg-pri;
+  color: $txt-pri;
+  overflow-x: hidden;
+}
+@include media {
+  .container {
+    max-width: 1190px;
+  }
+}
+.bg-pri {
+  background: $bg-pri;
+}
+
+.img {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+
+.cover-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contain-bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn {
+  @include font($font-second, $font-size-24);
+  @extend .flex-center;
+  width: 100%;
+  height: 68px;
+  color: $txt-btn;
+  background: $bg-btn;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    color: $txt-btn;
+    background: $color-black;
+  }
+
+  @include media($tablet-pro) {
+    font-size: $font-size-34;
+    width: 366px;
+    height: 107px;
+    margin-bottom: 230px;
+  }
+}

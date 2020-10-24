@@ -1,0 +1,106 @@
+.safari header.home {
+  height: 85vh;
+}
+@include media {
+  .safari header.home {
+    height: 100vh;
+  }
+}
+header.home {
+  width: 100%;
+  height: 88vh;
+  overflow: hidden;
+  display: flex;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .logo {
+    height: 10vh;
+  }
+  @include media {
+    height: 100vh;
+  }
+}
+// ============
+.main-content {
+  padding-top: 100px;
+
+  @include media {
+    .vector-3 {
+      margin-top: -28px;
+    }
+  }
+}
+
+.main-content .item {
+  margin-bottom: 48px;
+
+  .title {
+    @include font($font-second, $font-size-24, 600, normal);
+    margin-bottom: 24px;
+  }
+
+  .content {
+    font-size: $font-size-16;
+    color: $txt-second;
+  }
+
+  @include media {
+    margin-bottom: 138px;
+
+    .title {
+      font-size: $font-size-32;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      font-size: $font-size-24;
+    }
+  }
+}
+
+.text-block {
+  margin-bottom: 76px;
+  .faq-link {
+    color: $txt-pri;
+    text-decoration: underline;
+  }
+  .text {
+    @include font($font-second, $font-size-24, 600);
+  }
+
+  @include media {
+    margin-bottom: 170px;
+
+    .text {
+      font-size: $font-size-28;
+      white-space: nowrap;
+    }
+  }
+}
+
+.quote {
+  margin-bottom: 32px;
+
+  .content {
+    @include font($font-pri, $font-size-28, normal, italic);
+    margin-bottom: 30px;
+  }
+  .name {
+    @include font($font-second, $font-size-24, 600);
+    color: $txt-second;
+  }
+  @include media {
+    margin-bottom: 77px;
+
+    .content {
+      font-size: $font-size-50;
+      margin-bottom: 56px;
+    }
+    .name {
+      font-size: $font-size-34;
+    }
+  }
+}

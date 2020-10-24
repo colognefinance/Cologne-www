@@ -1,0 +1,19 @@
+@include font-face(
+  "copperplate",
+  "../fonts/copperplate/copperplate-gothic-light-webfont.woff"
+);
+@include font-face(
+  "opticopperplate",
+  "../fonts/copperplate/opticopperplate-webfont.woff"
+);
+
+@include font-face(
+  "opticopperplate light",
+  "../fonts/copperplate/opticopperplate-light-webfont.woff"
+);
+
+// OPTIMA
+@include font-face("Optima", "../fonts/optima/OPTIMA.woff");
+@include font-face("Optima Italic", "../../fonts/optima/Optima-Italic.woff");
+@include font-face("Optima Medium", "../fonts/optima/Optima Medium.woff");
+@include font-face("Optima Bold", "../fonts/optima/OPTIMA_B.woff");

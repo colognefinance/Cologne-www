@@ -1,0 +1,125 @@
+header {
+  text-transform: uppercase;
+  .scroll-down {
+    @include font($font-pri, $font-size-16);
+    margin-top: auto;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $txt-second;
+  }
+
+  .sub-title,
+  .des {
+    @include font($font-pri, $font-size-26);
+    margin-bottom: 0;
+  }
+  .sub-title {
+    line-height: 1.25;
+    margin: 16px 0;
+  }
+
+  .des {
+    font-style: italic;
+    padding-left: 25px;
+    color: $txt-second;
+  }
+
+  @include media($tablet) {
+    .content {
+      margin-top: 50px;
+    }
+
+    .sub-title,
+    .des {
+      font-size: $font-size-36;
+    }
+
+    .scroll-down {
+      font-size: $font-size-28;
+    }
+
+    .des {
+      padding-left: 60px;
+    }
+  }
+  @include media($tablet-pro) {
+    .sub-title,
+    .des {
+      font-size: $font-size-48;
+    }
+  }
+
+  @include media {
+    .content {
+      margin-top: 0;
+    }
+    .sub-title {
+      margin: 0;
+    }
+    .sub-title,
+    .des {
+      font-size: $font-size-60;
+    }
+
+    .scroll-down {
+      font-size: $font-size-30;
+    }
+  }
+}
+.logo {
+  @include font($font-copper-light, $font-size-24);
+  a {
+    color: $color-dark;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @include media($tablet) {
+    font-size: $font-size-36;
+  }
+}
+.arrow-title {
+  @extend .flex-center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .title {
+    @include font($font-copper, $font-size-60, 600);
+    padding: 0;
+  }
+  .arrow {
+    width: 100%;
+    order: 0;
+    margin-left: auto;
+    text-align: right;
+    margin-bottom: 35px;
+  }
+  @include media($tablet) {
+    .arrow {
+      width: 25%;
+      margin-right: -20px;
+      order: 1;
+      margin-bottom: 0;
+    }
+    .title {
+      font-size: $font-size-80;
+      letter-spacing: 12px;
+    }
+  }
+  @include media($tablet-pro) {
+    .content {
+      height: 40vh;
+    }
+    .arrow {
+      width: auto;
+    }
+    .title {
+      font-size: $font-size-100;
+    }
+  }
+  @include media {
+    .title {
+      font-size: $main-title;
+    }
+  }
+}
